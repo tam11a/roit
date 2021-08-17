@@ -1,0 +1,68 @@
+.wavebox{
+    position: relative;
+    height: 350px;
+    width: 250px;
+    margin-bottom: -65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.box {
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    z-index: 9;
+  }
+
+.wave {
+    opacity: .4;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    background: #202020;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+}
+
+.wave.-one{
+    background: #9e0613;
+    opacity: .1;
+}
+
+.wave.-three {
+    animation: drift 5000ms infinite linear;       
+}
+
+.wave.-two {
+    animation: drift 7000ms infinite linear;
+    opacity: .4;
+    background: #381616;
+}
+
+.icon-svg{
+    position: absolute;
+    width: 70%;
+    z-index: 10;
+    transform: translateY(-45px);
+}
+.cls-1{
+    fill:#d82534b9;
+}
+@keyframes colored{
+    from { fill:#d82533; }
+    from { fill:#121212; }
+}
+
+@keyframes drift {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+}

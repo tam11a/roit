@@ -1,0 +1,20 @@
+.s-title{
+    font-size: 2.7em;
+    text-align: center;
+}
+.rc{
+    color: #a7222d;
+}
+.wc{
+    color: #fff;
+}
+.toto{
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+.moto{
+    color: #a7222d;
+    font-size: 0.35em;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}

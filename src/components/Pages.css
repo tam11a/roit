@@ -1,0 +1,39 @@
+.pagesdiv{
+    width: 100%;
+    transition: width 0.5s;
+}
+.Pages{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #251818; 
+    padding: 20px;
+    /* 313743 */
+}
+
+.NoPages{
+    height: 100%;
+    width: 100%;
+}
+
+#terminal{
+    font: 14px "Monaco", Inconsolata, monospace;
+    letter-spacing: 0.7px;
+}
+.dollar{
+    font-size: 1.1em;
+    color: #a7222d;
+    font-weight: bold;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+.twc{
+    animation: twc-anime 1s infinite;
+}
+@keyframes twc-anime {
+    0% { color: #a7222d; }
+    50% { color: transparent; }
+    100% { color: #a7222d; }
+  }

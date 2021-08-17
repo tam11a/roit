@@ -1,0 +1,110 @@
+.Nav{
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 100%;
+    /* animation: color-change-1 2s infinite; */
+}
+.rc-a{
+    color: #a7222d;
+}
+
+.Nav > div > div{
+    cursor: pointer;
+    text-align: center;
+}
+
+.Nav > div{
+    position: absolute;
+    left: 110%;
+    width: 100%;
+    transition: left 0.5s,
+                transform 0.5s;
+}
+
+.Nav.on > div{
+    left: 50%;
+    transform: translateX(-50%);
+    transition: left 0.5s,
+                transform 0.5s;
+}
+
+.Nav > div > div:hover{
+    font-weight: bold;
+}
+.Nav > div > div:hover.b{
+    font-weight: normal;
+}
+.b{
+    opacity: 0.4;
+}
+
+.toogle{
+    position: relative;
+    top: 55px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.toogle:before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    width: 100%;
+    height: 3px;
+    background:  #fff;
+    transition: top 0.3s,
+                width 0.3s,
+                transform 0.3s;
+}
+.toogle:after{
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    height: 3px;
+    background:  #fff;
+    transition: top 0.3s,
+                width 0.3s,
+                transform 0.3s;
+}
+
+.Nav.on .toogle{
+    transform: translateY(100px);
+    transition: transform 0.5s ease;
+}
+
+.Nav.on .toogle:before{
+    top: 50%;
+    width: 50%;
+    transform: translate(50%, -50%) rotate(45deg);
+    transition: top 0.3s,
+                width 0.3s,
+                transform 0.3s;
+}
+.Nav.on .toogle:after{
+    top: 50%;
+    width: 50%;
+    transform: translate(50%, -50%) rotate(-45deg);
+    transition: top 0.5s,
+                width 0.5s,
+                transform 0.5s;
+}
+
+
+
+
+
+
+@keyframes color-change-1 {
+    0% { color: #fff; }
+    50% { color: #a7222d; }
+    100% { color: #fff; }
+  }
+
+@keyframes color-change-2 {
+    0% { color: #a7222d; }
+    50% { color: #fff; }
+    100% { color: #a7222d; }
+}
